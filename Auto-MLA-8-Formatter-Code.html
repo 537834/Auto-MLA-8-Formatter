@@ -1,0 +1,64 @@
+<!DOCTYPE html PUBLIC "-//W3C//DTD HTML 4.01//EN" "http://www.w3.org/TR/html4/strict.dtd">
+<html>
+<head>
+  <meta http-equiv="Content-Type" content="text/html; charset=utf-8">
+  <meta http-equiv="Content-Style-Type" content="text/css">
+  <title></title>
+  <meta name="Generator" content="Cocoa HTML Writer">
+  <meta name="CocoaVersion" content="1504.82">
+  <style type="text/css">
+    p.p1 {margin: 0.0px 0.0px 0.0px 0.0px; font: 12.0px Helvetica}
+    p.p2 {margin: 0.0px 0.0px 0.0px 0.0px; font: 12.0px Helvetica; min-height: 14.0px}
+  </style>
+</head>
+<body>
+<p class="p1">// <span class="Apple-converted-space">              </span>MLA 8 FORMATTER CODE</p>
+<p class="p2"><br></p>
+<p class="p1">//<span class="Apple-converted-space">  </span>Select onOpen in the top bar (near the play button)</p>
+<p class="p1">// <span class="Apple-converted-space">  </span>Press the play button and refresh the document</p>
+<p class="p2"><br></p>
+<p class="p2"><br></p>
+<p class="p1">function InsertHeading() {</p>
+<p class="p2"><span class="Apple-converted-space">  </span></p>
+<p class="p1">var body = DocumentApp.getActiveDocument().getBody().setFontFamily(DocumentApp.FontFamily.TIMES_NEW_ROMAN);</p>
+<p class="p2"><br></p>
+<p class="p1">var text = body.editAsText();</p>
+<p class="p2"><br></p>
+<p class="p1">var date2 = new Date();</p>
+<p class="p1">var mt = date2.getMonth();</p>
+<p class="p1">var months = ["January", "February", "March", "April", "May", "June", "July", "August", "September", "October", "November", "December"];</p>
+<p class="p1">var currentM = months[mt];<span class="Apple-converted-space"> </span></p>
+<p class="p1">Logger.log("Current Month is: " +currentM);<span class="Apple-converted-space"> </span></p>
+<p class="p1">var day = date2.getDay();</p>
+<p class="p1">var year = date2.getYear();</p>
+<p class="p1">text.insertText(0,day +" " +currentM +" " +year);</p>
+<p class="p1">text.insertText(0,'English 8\n'); //ADD CLASS AND GRADE HERE (DONT GET RID OF THE \n)</p>
+<p class="p1">text.insertText(0,'Mrs. Vukorpa\n'); //ADD TEACHER HERE (DON'T GET RID OF THE \n)</p>
+<p class="p1">text.insertText(0, 'Micah Wagoner\n'); //ADD YOUR NAME HERE (DON'T GET RID OF THE \n)</p>
+<p class="p2"><br></p>
+<p class="p1">}</p>
+<p class="p2"><br></p>
+<p class="p2"><br></p>
+<p class="p1">function onOpen(){</p>
+<p class="p1"><span class="Apple-converted-space">  </span>//when the document opens, add a custom menu for auto MLA Formatter</p>
+<p class="p1"><span class="Apple-converted-space"> </span>DocumentApp.getUi().createMenu("Auto MLA Formatter").addItem("Run it!", "InsertHeading").addItem("Notes (PLEASE READ!)", "notes").addItem("Customize to fit your needs!", "howToCustomize").addItem("Report a bug/Send Feedback", "sendFeedback").addToUi()</p>
+<p class="p2"><span class="Apple-converted-space"> </span></p>
+<p class="p1">}</p>
+<p class="p2"><br></p>
+<p class="p1">function notes(){</p>
+<p class="p1"><span class="Apple-converted-space">  </span>DocumentApp.getUi().alert("This auto formatter is intended to automatically put in a heading in the MLA 8 format with the current date. The auto editor will NOT automatically update the date - that is YOUR responsibility. Please note that sometimes you may have to change the line spacing or font size based on teacher requirements.")<span class="Apple-converted-space"> </span></p>
+<p class="p1">}</p>
+<p class="p2"><br></p>
+<p class="p1">function howToCustomize(){</p>
+<p class="p1"><span class="Apple-converted-space">  </span>DocumentApp.getUi().alert("To customize this auto MLA 8 formatter, go to TOOLS in the menubar. Select SCRIPT EDITOR. In the script editor, follow instructions on lines 25, 26, and 27. The instructions are in orange at the end of the line")<span class="Apple-converted-space"> </span></p>
+<p class="p1">}</p>
+<p class="p2"><br></p>
+<p class="p1">function sendFeedback(){</p>
+<p class="p1"><span class="Apple-converted-space">  </span>DocumentApp.getUi().alert("To send feedback or to report a bug, go to https://forms.gle/tGAtyo1TCKWJJ7LFA Thank you for your feedback")<span class="Apple-converted-space"> </span></p>
+<p class="p1">}</p>
+<p class="p2"><br></p>
+<p class="p2"><br></p>
+<p class="p1">// Coded by Micah Wagoner | Date code found on stackoverflow.com/a/33343601 (modified to fit needs)</p>
+<p class="p1">//--------------------------------------------------------------------------------------------------</p>
+</body>
+</html>
