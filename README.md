@@ -3,7 +3,7 @@ This auto formatter is intended to automatically put in a heading in the MLA 8 f
 
 This is meant to be used in Google Docs, using the Script Editor
 
-# INSTRUCIONS
+# INSTRUCTIONS
 1. Download repository as a .zip file, then expand it
 2. Go to the Script Editor in Google Docs
      -To get to the script editor, in a Google Doc, go to TOOLS and then click on SCRIPT EDITOR
