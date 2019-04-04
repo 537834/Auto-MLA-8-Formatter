@@ -3,5 +3,9 @@ This auto formatter is intended to automatically put in a heading in the MLA 8 f
 
 This is meant to be used in Google Docs, using the Script Editor
 
-Copy the text in the HTML and paste it into the Script editor.
-Follow the instructions at the top of the code, and you should be good to go!
+# INSTRUCRIONS
+1. Download repository as a .zip file, then expand it
+2. Go to the Script Editor in Google Docs
+     -To get to the script editor, in a Google Doc, go to TOOLS and then click on SCRIPT EDITOR
+3. Copy the text in the HTML and paste it into the Script editor.
+4. Follow the instructions at the top of the code, and you should be good to go!
